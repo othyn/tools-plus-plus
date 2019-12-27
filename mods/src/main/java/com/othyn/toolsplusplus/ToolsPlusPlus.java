@@ -31,7 +31,7 @@ public class ToolsPlusPlus {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		LOGGER.info(ToolsPlusPlus.NAME + "says hi!");
+		LOGGER.info(ToolsPlusPlus.NAME + " says hi!");
 	}
 
 	@EventHandler
