@@ -9,15 +9,20 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = TutorialMod.MODID, name = TutorialMod.NAME, version = TutorialMod.VERSION, acceptedMinecraftVersions = TutorialMod.MC_VERSION)
-public class TutorialMod {
+@Mod(
+	modid = ToolsPlusPlus.MODID,
+	name = ToolsPlusPlus.NAME,
+	version = ToolsPlusPlus.VERSION,
+	acceptedMinecraftVersions = ToolsPlusPlus.MC_VERSION)
 
-	public static final String MODID = "tutorialmod";
-	public static final String NAME = "Tutorial Mod";
+public class ToolsPlusPlus {
+
+	public static final String MODID = "toolsplusplus";
+	public static final String NAME = "Tools++";
 	public static final String VERSION = "0.0.1";
 	public static final String MC_VERSION = "[1.12.2]";
 
-	public static final Logger LOGGER = LogManager.getLogger(TutorialMod.MODID);
+	public static final Logger LOGGER = LogManager.getLogger(ToolsPlusPlus.MODID);
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
@@ -26,7 +31,7 @@ public class TutorialMod {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		LOGGER.info(TutorialMod.NAME + "says hi!");
+		LOGGER.info(ToolsPlusPlus.NAME + "says hi!");
 	}
 
 	@EventHandler
