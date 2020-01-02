@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "modid": "toolsplusplus",
+  "name": "Tools++",
+  "description": "Enhances the default tools with a few additional extras, after spicing them up a little first.",
+  "version": "0.0.1",
+  "mcversion": "1.12.2",
+  "url": "https://othyn.com",
+  "updateUrl": "https://github.com/othyn/tools-plus-plus",
+  "authorList": ["Othyn"],
+  "credits": "Me, cubicoder's amazing tutorials for mod making and the forge guys for the examples.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
