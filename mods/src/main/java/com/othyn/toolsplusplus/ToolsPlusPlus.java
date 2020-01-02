@@ -1,8 +1,11 @@
 package com.othyn.toolsplusplus;
 
+import com.othyn.toolsplusplus.tabs.ToolsPlusPlusTab;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -23,6 +26,8 @@ public class ToolsPlusPlus {
 	public static final String MC_VERSION = "[1.12.2]";
 
 	public static final Logger LOGGER = LogManager.getLogger(ToolsPlusPlus.MODID);
+	
+	public static final CreativeTabs TOOLS_PLUS_PLUS_TAB = new ToolsPlusPlusTab();
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {

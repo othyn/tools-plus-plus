@@ -3,7 +3,6 @@ package com.othyn.toolsplusplus.init;
 import com.othyn.toolsplusplus.ToolsPlusPlus;
 import com.othyn.toolsplusplus.utils.RegistryUtil;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -21,7 +20,7 @@ public class ToolsPlusPlusItems {
 		@SubscribeEvent
 		public static void registerItems(Register<Item> event) {
 			final Item[] items = {
-					RegistryUtil.setItemName(new Item(), "plus_iron_bar").setCreativeTab(CreativeTabs.MISC)
+					RegistryUtil.setItemName(new Item(), "plus_iron_bar").setCreativeTab(ToolsPlusPlus.TOOLS_PLUS_PLUS_TAB)
 			};
 
 			event.getRegistry().registerAll(items);
