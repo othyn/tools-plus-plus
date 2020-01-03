@@ -16,11 +16,11 @@ public class ModelRegistryHandler {
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
 		registerModel(PlusItems.IRON_BAR);
+		
 		registerModel(PlusItems.DIAMOND_PICKAXE_PLUS);
 	}
 	
 	private static void registerModel(Item item) {
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 	}
-	
 }

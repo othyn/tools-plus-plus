@@ -16,7 +16,8 @@ public class RegistryHandler {
 	public static void registerItems(Register<Item> event) {
 		final Item[] items = {
 			new ItemIronBar("ironBar", "iron_bar"),
-			new ItemDiamondPickaxePlus(PlusMaterials.TOOL_PLUS, "diamondPickaxePlus", "diamond_pickaxe_plus")
+			
+			new ItemDiamondPickaxePlus(PlusMaterials.TOOL_DIAMOND_PLUS, "diamondPickaxePlus", "diamond_pickaxe_plus")
 		};
 
 		event.getRegistry().registerAll(items);
