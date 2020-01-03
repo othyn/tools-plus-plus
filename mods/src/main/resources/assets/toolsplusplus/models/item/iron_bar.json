@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "toolsplusplus:item/plus_iron_bar"
+        "layer0": "toolsplusplus:items/iron_bar"
     }
 }

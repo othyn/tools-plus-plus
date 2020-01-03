@@ -1,6 +1,6 @@
 # Tabs
-itemGroup.toolsplusplus=Tools++
+itemGroup.toolsplusplus.plusTab=Tools++
 
 # Items
-item.toolsplusplus.plus_iron_bar.name=Iron Bar
-item.toolsplusplus.item_plus_diamond_pickaxe.name=Diamond Pickaxe++
+item.toolsplusplus.ironBar.name=Iron Bar
+item.toolsplusplus.diamondPickaxePlus.name=Diamond Pickaxe++

@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "toolsplusplus:item/item_plus_diamond_pickaxe"
-    }
-}
