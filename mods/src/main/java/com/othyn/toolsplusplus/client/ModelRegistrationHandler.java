@@ -16,6 +16,8 @@ public class ModelRegistrationHandler {
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
 		registerModel(ToolsPlusPlusItems.PLUS_IRON_BAR, 0);
+		
+		registerModel(ToolsPlusPlusItems.ITEM_PLUS_DIAMOND_PICKAXE, 0);
 	}
 
 	private static void registerModel(Item item, int meta) {
