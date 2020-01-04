@@ -126,7 +126,7 @@ public class AreaOfEffectHandler
         }
 
         // callback to the tool the player uses. Called on both sides. This damages the tool n stuff.
-        stack.onBlockDestroyed(world, blockState, blockPos, player);
+        // stack.onBlockDestroyed(world, blockState, blockPos, player);
 
         // server sided handling
         if (!world.isRemote) {
@@ -165,7 +165,7 @@ public class AreaOfEffectHandler
             }
             
             // callback to the tool
-            stack.onBlockDestroyed(world, blockState, blockPos, player);
+            // stack.onBlockDestroyed(world, blockState, blockPos, player);
 
             if (stack.getCount() == 0 && stack == player.getHeldItemMainhand()) {
                 ForgeEventFactory.onPlayerDestroyItem(player, stack, EnumHand.MAIN_HAND);
