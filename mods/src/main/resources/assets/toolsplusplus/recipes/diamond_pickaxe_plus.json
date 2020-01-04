@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DDD",
+        " I ",
+        " I "
+    ],
+    "key": {
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "I": {
+            "item": "toolsplusplus:iron_bar"
+        }
+    },
+    "result": {
+        "item": "toolsplusplus:diamond_pickaxe_plus"
+    }
+}
