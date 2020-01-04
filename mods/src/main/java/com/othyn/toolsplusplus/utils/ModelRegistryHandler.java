@@ -11,16 +11,18 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 
 @EventBusSubscriber(Side.CLIENT)
-public class ModelRegistryHandler {
-
+public class ModelRegistryHandler
+{
 	@SubscribeEvent
-	public static void registerModels(ModelRegistryEvent event) {
+	public static void registerModels(ModelRegistryEvent event)
+	{
 		registerModel(PlusItems.IRON_BAR);
 		
 		registerModel(PlusItems.DIAMOND_PICKAXE_PLUS);
 	}
 	
-	private static void registerModel(Item item) {
+	private static void registerModel(Item item)
+	{
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 	}
 }

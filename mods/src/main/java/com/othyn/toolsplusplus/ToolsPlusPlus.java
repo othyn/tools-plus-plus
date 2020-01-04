@@ -13,8 +13,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = ToolsPlusPlus.MODID, name = ToolsPlusPlus.NAME, version = ToolsPlusPlus.VERSION, acceptedMinecraftVersions = ToolsPlusPlus.MC_VERSION)
 
-public class ToolsPlusPlus {
-
+public class ToolsPlusPlus
+{
 	public static final String MODID = "toolsplusplus";
 	public static final String NAME = "Tools++";
 	public static final String VERSION = "0.0.1";
@@ -25,17 +25,20 @@ public class ToolsPlusPlus {
 	public static Logger logger;
 
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event) {
+	public void preInit(FMLPreInitializationEvent event)
+	{
 		logger = event.getModLog();
 	}
 
 	@EventHandler
-	public void init(FMLInitializationEvent event) {
+	public void init(FMLInitializationEvent event)
+	{
 		logger.info(ToolsPlusPlus.NAME + " loaded.");
 	}
 
 	@EventHandler
-	public void postInit(FMLPostInitializationEvent event) {
+	public void postInit(FMLPostInitializationEvent event)
+	{
         
 	}
 }

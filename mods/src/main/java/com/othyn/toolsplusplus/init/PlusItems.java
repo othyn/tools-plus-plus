@@ -6,7 +6,8 @@ import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 
 @ObjectHolder(ToolsPlusPlus.MODID)
-public class PlusItems {
+public class PlusItems
+{
 	public static final Item IRON_BAR = null;
 
 	public static final Item DIAMOND_PICKAXE_PLUS = null;
