@@ -1,35 +1,13 @@
-# eclipse
+# vscode
 bin
-*.launch
-.settings
-.metadata
+run
 .classpath
 .project
-
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
+.launch
 
 # gradle
 build
 .gradle
 
 # other
-eclipse
-run
 .DS_Store
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
