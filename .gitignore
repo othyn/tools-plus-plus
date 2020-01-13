@@ -1,6 +1,7 @@
 # vscode
 bin
 run
+.vscode
 .classpath
 .project
 .launch
