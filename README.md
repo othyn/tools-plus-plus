@@ -28,13 +28,19 @@ group = "com.othyn.toolsplusplus"
 archivesBaseName = "toolsplusplus"
 ```
 
-Simply run the Gradle build command within the root project directory:
+Simply run the Gradle task `mods > build > jar`:
 
 ```sh
 ./mods/gradlew build
 ```
 
-The mod will then be built to the `/build/libs/` directory as `toolsplusplus-1.12.2-X.Y`.
+The mod will then be built to:
+
+```sh
+./mods/build/libs/toolsplusplus-1.12.2-X.Y.jar
+```
+
+Which can then just be placed into the Minecraft Forge mods directory and away you go!
 
 ## Issues
 
