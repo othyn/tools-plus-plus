@@ -3,7 +3,7 @@
   "modid": "toolsplusplus",
   "name": "Tools++",
   "description": "Enhances the default tools with a few additional extras, after spicing them up a little first.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "mcversion": "1.12.2",
   "url": "https://othyn.com",
   "updateUrl": "https://github.com/othyn/tools-plus-plus",
