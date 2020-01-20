@@ -5,6 +5,7 @@ run
 .classpath
 .project
 .launch
+.settings
 
 # gradle
 build
