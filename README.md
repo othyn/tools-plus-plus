@@ -46,6 +46,12 @@ The mod will then be built to:
 
 Which can then just be placed into the Minecraft Forge mods directory and away you go!
 
+If you do do a new build, please add it to the `builds` directory in the root of the project:
+
+```sh
+./builds/toolsplusplus-1.12.2-X.Y.jar
+```
+
 ## Issues
 
 Documentation of the issues encountered during the development process, given that this is my first exploration into Java and Minecraft modding.
