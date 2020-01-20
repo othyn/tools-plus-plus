@@ -11,11 +11,11 @@ import net.minecraft.item.Item;
  */
 public class ItemIronBar extends Item {
     /**
-     * Declare what the name of the item is in FQDN style, this is what minecraft
-     * uses internally as reference to the item - e.g. minecraft.diamond_pickaxe.
-     * Then what the item is in the Forge registry, which is the item collection,
-     * and assigning it to the creative tab so it can be used in creative mode in
-     * game - good for testing.
+     * Constructor method, same as class name. Declare what the name of the item is
+     * in FQDN style, this is what minecraft uses internally as reference to the
+     * item - e.g. minecraft.diamond_pickaxe. Then what the item is in the Forge
+     * registry, which is the item collection, and assigning it to the creative tab
+     * so it can be used in creative mode in game - good for testing.
      *
      * @param unlocalizedName The plain name of the item, e.g.
      *                        minecraft.diamond_pickaxe.

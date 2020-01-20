@@ -1,6 +1,9 @@
 package com.othyn.toolsplusplus.utils;
 
+import com.othyn.toolsplusplus.items.ItemDiamondAxePlus;
+import com.othyn.toolsplusplus.items.ItemDiamondHoePlus;
 import com.othyn.toolsplusplus.items.ItemDiamondPickaxePlus;
+import com.othyn.toolsplusplus.items.ItemDiamondShovelPlus;
 import com.othyn.toolsplusplus.items.ItemIronBar;
 import com.othyn.toolsplusplus.material.PlusMaterials;
 
@@ -21,8 +24,12 @@ public class RegistryHandler {
      */
     @SubscribeEvent
     public static void registerItems(Register<Item> event) {
-        final Item[] items = { new ItemIronBar("ironBar", "iron_bar"), new ItemDiamondPickaxePlus(
-                PlusMaterials.TOOL_DIAMOND_PLUS, "diamondPickaxePlus", "diamond_pickaxe_plus") };
+        final Item[] items = { new ItemIronBar("ironBar", "iron_bar"),
+                new ItemDiamondPickaxePlus(PlusMaterials.TOOL_DIAMOND_PLUS, "diamondPickaxePlus",
+                        "diamond_pickaxe_plus"),
+                new ItemDiamondShovelPlus(PlusMaterials.TOOL_DIAMOND_PLUS, "diamondShovelPlus", "diamond_shovel_plus"),
+                new ItemDiamondAxePlus(PlusMaterials.TOOL_DIAMOND_PLUS, "diamondAxePlus", "diamond_axe_plus"),
+                new ItemDiamondHoePlus(PlusMaterials.TOOL_DIAMOND_PLUS, "diamondHoePlus", "diamond_hoe_plus") };
 
         event.getRegistry().registerAll(items);
     }

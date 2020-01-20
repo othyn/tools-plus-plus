@@ -18,6 +18,10 @@ See the [Minecraft written mod tutorial](https://cubicoder.github.io/tutorials/1
 ./docs/C - Setting Up the Development Environment.pdf
 ```
 
+## Development
+
+Once you are ready to test in the Minecraft client, simply run the Gradle task `mods > forgegradle > runClient`.
+
 ## Building & Releasing
 
 Edit the following line in `./mods/build.gradle`:
@@ -57,3 +61,11 @@ To create the Java package, this is done at the top of the sidebar browser NOT m
 ### Item Assets
 
 Original item model assets found in `~/Library/Application Support/minecraft/versions/1.12.2/1.12.2/assets/minecraft/textures/items` after first unpacking the base `1.12.2.jar` with an unarchiver.
+
+I then extract the iron colours from the iron bucket and used a sub-set of those to make a new pallet, which I've bundled with `./mods/src/main/resources/assets/toolsplusplus/textures/items/iron_stick.afpalette`. Then using Affinity Photo's ❤️ pixel tool, got to work transforming the tools into their new handle colours!
+
+## Todo
+
+- The `Area of Effect` logic, the horrible smelling duplicate code, needs abstracting out of the `ItemDiamond*Plus` classes and placing into an abstract class. Although need to think about logistics of that as the base class for each item extends differently. There may be a base shared class, such as `ItemTool` that I can base it off, but then the issue becomes then further extending for the type which is impossible... hmmm...
+
+- Add achievements.

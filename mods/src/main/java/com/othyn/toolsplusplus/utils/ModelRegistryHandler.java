@@ -25,6 +25,9 @@ public class ModelRegistryHandler {
         registerModel(PlusItems.IRON_BAR);
 
         registerModel(PlusItems.DIAMOND_PICKAXE_PLUS);
+        registerModel(PlusItems.DIAMOND_SHOVEL_PLUS);
+        registerModel(PlusItems.DIAMOND_AXE_PLUS);
+        registerModel(PlusItems.DIAMOND_HOE_PLUS);
     }
 
     /**

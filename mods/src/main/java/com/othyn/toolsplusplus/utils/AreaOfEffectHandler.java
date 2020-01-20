@@ -1,6 +1,6 @@
 package com.othyn.toolsplusplus.utils;
 
-import com.othyn.toolsplusplus.items.ItemDiamondPickaxePlus;
+import com.othyn.toolsplusplus.ToolsPlusPlus;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
@@ -31,14 +31,17 @@ public class AreaOfEffectHandler {
      */
     public static BlockPos[] getBreakArea(BlockPos blockPos, EnumFacing sideHit, EntityPlayer player) {
         // The area to mine the original block, plus one in each axis to make a 3x3x1
-        // grid.The Z axis is determined from the values of the width and height.
+        // grid.The Z axis is determined from the values of the width and height. To
+        // keep the z axis on the same plane as the mined block, set the mineDepth - the
+        // Z offset - to zero.
         int mineWidth = 1;
         int mineHeight = 1;
+        int mineDepth = 0;
 
-        // To keep the z axis on the same plane as the mined block, set the offset to
+        // To keep the z axis on the same plane as the mined block, set the Z offset to
         // zero.
-        BlockPos start = blockPos.offset(sideHit, 0);
-        BlockPos end = blockPos.offset(sideHit, 0);
+        BlockPos start = blockPos.offset(sideHit, mineDepth);
+        BlockPos end = blockPos.offset(sideHit, mineDepth);
 
         // Not sure what this accomplishes, but I assume it is to do with offsetting the
         // start and end positions based on if the player is stood at eye level with the
@@ -106,6 +109,7 @@ public class AreaOfEffectHandler {
 
         // only harvestable blocks that aren't impossibly slow to harvest
         if (!ForgeHooks.canHarvestBlock(block, player, world, blockPos) || refStrength / strength > 10f) {
+            ToolsPlusPlus.logger.info("T++ breakBlock: Cannot harvest block.");
             return;
         }
 
@@ -127,7 +131,8 @@ public class AreaOfEffectHandler {
         // instantly break stuff like obsidian
         // or precious ores you can't harvest while mining stone
         // only effective materials
-        if (!((ItemDiamondPickaxePlus) stack.getItem()).isEffective(stack, block)) {
+        if (!((stack.getItem()).canHarvestBlock(block))) {
+            ToolsPlusPlus.logger.info("T++ breakBlockChecks: Cannot harvest block: " + block.toString());
             return false;
         }
 

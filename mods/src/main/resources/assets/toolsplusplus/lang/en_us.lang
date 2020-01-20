@@ -4,3 +4,6 @@ itemGroup.toolsplusplus.plusTab=Tools++
 # Items
 item.toolsplusplus.ironBar.name=Iron Bar
 item.toolsplusplus.diamondPickaxePlus.name=Diamond Pickaxe++
+item.toolsplusplus.diamondShovelPlus.name=Diamond Shovel++
+item.toolsplusplus.diamondAxePlus.name=Diamond Axe++
+item.toolsplusplus.diamondHoePlus.name=Diamond Hoe++
