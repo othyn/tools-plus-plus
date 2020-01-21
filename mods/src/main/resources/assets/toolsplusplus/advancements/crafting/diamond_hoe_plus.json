@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "toolsplusplus:diamond_hoe_plus"
+        },
+        "title": {
+            "translate": "advancements.crafting.diamond_hoe_plus.title"
+        },
+        "description": {
+            "translate": "advancements.crafting.diamond_hoe_plus.description"
+        }
+    },
+    "parent": "toolsplusplus:crafting/root",
+    "rewards": {
+        "experience": 100
+    },
+    "criteria": {
+        "get_diamond_hoe_plus": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "toolsplusplus:diamond_hoe_plus"
+                    }
+                ]
+            }
+        }
+    }
+}

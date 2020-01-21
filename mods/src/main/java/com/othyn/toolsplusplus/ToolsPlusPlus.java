@@ -12,7 +12,11 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = ToolsPlusPlus.MODID, name = ToolsPlusPlus.NAME, version = ToolsPlusPlus.VERSION, acceptedMinecraftVersions = ToolsPlusPlus.MC_VERSION)
 
-// TODO - ADD ACHIEVEMENTS
+// TODO - Make the axe functionality be so that it can cut down whole trees. I
+// think do this by onBlockBreak check surrounding blocks, if one is wood break
+// it and check 3x3x3 surrounding the broken wooden block to see if that is also
+// wood or leaves, break it. Between each action, pause for 250ms. The obvious
+// side effect would mean if there are connected trees, it will harvest it all.
 
 /**
  * Main mod entry point and handler.

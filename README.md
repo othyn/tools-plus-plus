@@ -20,7 +20,9 @@ See the [Minecraft written mod tutorial](https://cubicoder.github.io/tutorials/1
 
 ## Development
 
-Once you are ready to test in the Minecraft client, simply run the Gradle task `mods > forgegradle > runClient`.
+To view reference Minecraft files; assets, classes, etc. see the `Java Dependencies` window in the VSCode explorer sidebar. Then under `mods > Project and External Dependencies > forgeSrc-1.12.2-14.23.5.2847.jar` (or whatever Forge decomiled Minecraft to whilst running the gradle task to decompile it). Then within that Java package, there will be all of the reference structure and data of the game in its OG form. E.g. `<forge>/assets/minecraft` matches the structure of `mods/src/main/resources/assets/toolsplusplus`.
+
+Once you are ready to test in the Minecraft client, simply run the Gradle task `mods > forgegradle > runClient`. Sometimes I've found VSCode bugs out and gets stuck binding the run arrow to a specific gradle task, regardless of which one you are hovering over and when you click it. If it does this, right click on the gradle task and click "Run Task" instead of clicking the rows run button.
 
 ## Building & Releasing
 

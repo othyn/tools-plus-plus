@@ -7,3 +7,15 @@ item.toolsplusplus.diamondPickaxePlus.name=Diamond Pickaxe++
 item.toolsplusplus.diamondShovelPlus.name=Diamond Shovel++
 item.toolsplusplus.diamondAxePlus.name=Diamond Axe++
 item.toolsplusplus.diamondHoePlus.name=Diamond Hoe++
+
+# Advancements
+advancements.crafting.root.title=Tools++
+advancements.crafting.root.description=What, diamond isn't good enough for you?
+advancements.crafting.diamond_pickaxe_plus.title=A pick you'll always pick!
+advancements.crafting.diamond_pickaxe_plus.description=Mining one block at a time is so last year.
+advancements.crafting.diamond_shovel_plus.title=Get'in diggy with it
+advancements.crafting.diamond_shovel_plus.description=Shoveling one block at a time is so last year.
+advancements.crafting.diamond_axe_plus.title=...and my axe!
+advancements.crafting.diamond_axe_plus.description=Chopping one block at a time is so last year.
+advancements.crafting.diamond_hoe_plus.title=Really, you made one?
+advancements.crafting.diamond_hoe_plus.description=It's the same as last year.
