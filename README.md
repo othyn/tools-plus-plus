@@ -4,6 +4,11 @@ Minecraft mod to subtly extend vanilla tools.
 
 ## Excellent Resources
 
+- [TurtyWurty - 1.16 Modding Series](https://www.youtube.com/playlist?list=PLaevjqy3Xufavi5mWXvWnGmwRylL-QZy7)
+- [Jorrit Tyberghein - 1.16 Modding Series](https://www.youtube.com/playlist?list=PLmaTwVFUUXiDRjPTbDmBgJZN4MeQ5uYby)
+- [Cy4's Tutorials - 1.16 Modding Series](https://www.youtube.com/playlist?list=PLlbkaeFHn13HQlW5Pb7Gf-xLJoAlfVbNU)
+- [TechnoVision - 1.16 Modding Series](https://www.youtube.com/playlist?list=PLDhiRTZ_vnoVKPsdTLORpcRnQ50fRdb-S)
+
 - [Forge Docs](https://mcforge.readthedocs.io/en/latest/)
 - [Minecraft written mod tutorial](https://cubicoder.github.io/tutorials/1-12-2/tutorials/)
 - [Reference repo for the mod tutorial](https://github.com/cubicoder/tutorialmod)
@@ -20,7 +25,7 @@ See the [Minecraft written mod tutorial](https://cubicoder.github.io/tutorials/1
 
 ## Development
 
-To view reference Minecraft files; assets, classes, etc. see the `Java Dependencies` window in the VSCode explorer sidebar. Then under `mods > Project and External Dependencies > forgeSrc-1.12.2-14.23.5.2847.jar` (or whatever Forge decomiled Minecraft to whilst running the gradle task to decompile it). Then within that Java package, there will be all of the reference structure and data of the game in its OG form. E.g. `<forge>/assets/minecraft` matches the structure of `mods/src/main/resources/assets/toolsplusplus`.
+To view reference Minecraft files; assets, classes, etc. see the `Java Dependencies` window in the VSCode explorer sidebar. Then under `mods > Project and External Dependencies > forgeSrc-1.16.5-14.23.5.2847.jar` (or whatever Forge decomiled Minecraft to whilst running the gradle task to decompile it). Then within that Java package, there will be all of the reference structure and data of the game in its OG form. E.g. `<forge>/assets/minecraft` matches the structure of `mods/src/main/resources/assets/toolsplusplus`.
 
 Once you are ready to test in the Minecraft client, simply run the Gradle task `mods > forgegradle > runClient`. Sometimes I've found VSCode bugs out and gets stuck binding the run arrow to a specific gradle task, regardless of which one you are hovering over and when you click it. If it does this, right click on the gradle task and click "Run Task" instead of clicking the rows run button.
 
@@ -29,7 +34,7 @@ Once you are ready to test in the Minecraft client, simply run the Gradle task `
 Edit the following line in `./mods/build.gradle`:
 
 ```gradle
-version = "1.12.2-X.Y" // This line, update the version
+version = "1.16.5-X.Y" // This line, update the version
 group = "com.othyn.toolsplusplus"
 archivesBaseName = "toolsplusplus"
 ```
@@ -43,7 +48,7 @@ Simply run the Gradle task `mods > build > jar`:
 The mod will then be built to:
 
 ```sh
-./mods/build/libs/toolsplusplus-1.12.2-X.Y.jar
+./mods/build/libs/toolsplusplus-1.16.5-X.Y.jar
 ```
 
 Which can then just be placed into the Minecraft Forge mods directory and away you go!
@@ -51,7 +56,7 @@ Which can then just be placed into the Minecraft Forge mods directory and away y
 If you do do a new build, please add it to the `builds` directory in the root of the project:
 
 ```sh
-./builds/toolsplusplus-1.12.2-X.Y.jar
+./builds/toolsplusplus-1.16.5-X.Y.jar
 ```
 
 ## Issues
@@ -68,7 +73,7 @@ To create the Java package, this is done at the top of the sidebar browser NOT m
 
 ### Item Assets
 
-Original item model assets found in `~/Library/Application Support/minecraft/versions/1.12.2/1.12.2/assets/minecraft/textures/items` after first unpacking the base `1.12.2.jar` with an unarchiver.
+Original item model assets found in `~/Library/Application Support/minecraft/versions/1.16.5/1.16.5/assets/minecraft/textures/items` after first unpacking the base `1.16.5.jar` with an unarchiver.
 
 I then extract the iron colours from the iron bucket and used a sub-set of those to make a new pallet, which I've bundled with `./mods/src/main/resources/assets/toolsplusplus/textures/items/iron_stick.afpalette`. Then using Affinity Photo's ❤️ pixel tool, got to work transforming the tools into their new handle colours!
 
