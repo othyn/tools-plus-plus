@@ -1,3 +1,7 @@
 {
-	"item.toolsplusplus.axe_plus_plus": "Axe++"
+	"item.toolsplusplus.iron_bar": "Iron Bar",
+	"item.toolsplusplus.axe_plus_plus": "Axe++",
+	"item.toolsplusplus.hoe_plus_plus": "Hoe++",
+	"item.toolsplusplus.pickaxe_plus_plus": "Pickaxe++",
+	"item.toolsplusplus.shovel_plus_plus": "Shovel++"
 }

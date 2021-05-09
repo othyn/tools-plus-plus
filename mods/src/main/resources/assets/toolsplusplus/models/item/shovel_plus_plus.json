@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "toolsplusplus:items/shovel_plus_plus"
+    }
+}

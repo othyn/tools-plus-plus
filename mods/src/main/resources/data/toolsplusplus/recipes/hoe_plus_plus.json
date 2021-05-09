@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DD ",
+        " I ",
+        " I "
+    ],
+    "key": {
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "I": {
+            "item": "toolsplusplus:iron_bar"
+        }
+    },
+    "result": {
+        "item": "toolsplusplus:hoe_plus_plus",
+        "count": 1
+    }
+}
